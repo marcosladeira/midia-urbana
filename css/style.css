@@ -1,0 +1,150 @@
+:root{
+    --brand-color: #FF0000;
+    --azul:#009cde;
+    --botao:#009cde;
+}
+.navbar{
+    box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+.inf{
+    background: #29794C;
+    color: white;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    border-bottom:  solid 2px #074582;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #087DB1;
+  }
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.jumbotron{
+    background: url("../img/backsite.png") ;
+    filter: grayscale(50%);
+    color: white;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+.jumbotron h3{
+    color:#dedede;
+    font-weight: 300;
+}
+.jumbotron__botoes button{
+width: 220px;
+}
+.card{
+    border: 0px;
+    box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+}
+
+.bi-facebook{
+    color: #087DB1;
+}
+
+.bi-instagram{
+    color: #087DB1;
+}
+
+.btn-danger{
+    background: var(--brand-color);
+}
+hr{
+    border: 1px solid #808080;
+    width: 85px;
+}
+.card-title{
+    font-size: 22px;
+}
+.texto hr{
+    border-color:var(--azul) ;
+}
+.btn-info{
+    background: var(--botao);
+width: 280px!important;
+}
+.desfecho{
+    color: #087DB1;
+    background: #F7F7F7;
+}
+.desfecho hr{
+    width: 188px;
+    border-color: white ;
+}
+.quadrado{
+    background:  #b50107;
+    color: white;
+}
+.quadrado p{
+    font-size: 40px;
+}
+.row{
+    font-size: 30px;
+}
+
+img.m2{
+    filter: grayscale(100%);
+
+}
+
+img.m2:hover{
+    filter: grayscale(0%);
+}
+.row i{
+    font-size: 60px;
+    color:  #29794C;
+}
+.whatsapp-fixo {
+    position: fixed;
+    bottom:35px;
+    right:35px;
+    z-index: 997;
+    text-align: right;
+}
+.whatsapp-fixo a {
+    text-decoration: none;
+}
+.whatsapp-description{
+    text-align: center;
+    /*height: 0;*/
+    display: none;
+    background: #25D366;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    overflow: hidden;
+    transition: opacity 0.3s, height 0.3s ease;
+}
+.whatsapp-description p{
+    margin: none !important;
+    line-height: 1.8;
+}
+.whatsapp-fixo:hover > .whatsapp-description{
+    /*display: block;*/
+    height: auto;
+    /* opacity: 100%; */
+    display: block;
+    transition: opacity 0.3s, height 0.3s ease;
+}
+@media(max-width: 576px){
+    .inf{
+        display: none!important;
+    }
+}
